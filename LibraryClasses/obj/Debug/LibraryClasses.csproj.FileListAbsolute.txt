@@ -1,0 +1,6 @@
+C:\Users\Szymon\source\repos\Library\LibraryClasses\bin\Debug\LibraryClasses.dll
+C:\Users\Szymon\source\repos\Library\LibraryClasses\bin\Debug\LibraryClasses.pdb
+C:\Users\Szymon\source\repos\Library\LibraryClasses\obj\Debug\LibraryClasses.csprojAssemblyReference.cache
+C:\Users\Szymon\source\repos\Library\LibraryClasses\obj\Debug\LibraryClasses.csproj.CoreCompileInputs.cache
+C:\Users\Szymon\source\repos\Library\LibraryClasses\obj\Debug\LibraryClasses.dll
+C:\Users\Szymon\source\repos\Library\LibraryClasses\obj\Debug\LibraryClasses.pdb
