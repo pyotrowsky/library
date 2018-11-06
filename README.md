@@ -1,2 +1,0 @@
-Marta Brzozowska
-Adrian Piotrowski
