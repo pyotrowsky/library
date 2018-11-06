@@ -1,11 +1,19 @@
 using System; 
 
 namespace Library {
-    abstract class Address {
+    public class Address {
     
     private String street;
     private String town;
     private int postalCode;
+
+        public Address(String street, String town, int postalCode)
+        {
+            this.street = street;
+            this.town = town;
+            this.postalCode = postalCode;
+        }
+
 
 	public String getStreet()
 	{
