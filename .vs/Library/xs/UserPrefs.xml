@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{B9480A0F-B571-44FC-9012-59718E91F7A5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LibraryMac/ObjGenerator.cs">
+    <Files>
+      <File FileName="LibraryMac/ObjGenerator.cs" Line="5" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Library" expanded="True">
+            <Node name="Library" expanded="True">
+              <Node name="ObjGenerator.cs" selected="True" />
+            </Node>
+            <Node name="LibraryTests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Library" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LibraryTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
