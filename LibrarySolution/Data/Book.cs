@@ -4,22 +4,11 @@ namespace LibrarySolution
 {
     public class Book : Item
     {
-        private int numberOfPages;
+        public int numberOfPages { get; set; }
 
-        public Book(String title, long refNo, Author author, int creationDate,
-        String genre, String language, int numberOfPages) : base(title, refNo, author, creationDate, genre, language)
+        public Book(String title, int authorId, int creationDate, String language, int numberOfPages) : base(title, authorId, creationDate, language)
         {
             this.numberOfPages = numberOfPages;
         }
-        public int getNumberOfPages()
-        {
-            return this.numberOfPages;
-        }
-
-        public void setNumberOfPages(int numberOfPages)
-        {
-            this.numberOfPages = numberOfPages;
-        }
-
     }
 }

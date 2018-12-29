@@ -1,40 +1,21 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace LibrarySolution
 {
     public abstract class User
     {
-        protected String firstName { get; set; }
-        protected String lastName { get; set; }
-        protected int refNo { get; set; }
+        
+        public int id { get; set; }
+        public String firstName { get; set; }
+        public String lastName { get; set; }
+        
 
-        public User(String firstName, String lastName, int refNo)
+        public User(String firstName, String lastName)
         {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.refNo = refNo;
         }
-
-
-        //     public String getFirstname()
-        // {
-        //  return this.firstName.Trim();
-        // }
-
-        // public void setFirstname(String firstName)
-        // {
-        //  this.firstName = firstName.Trim();
-        // }
-
-        /*public String getLastname()
-        {
-            return this.lastName.Trim();
-        }
-
-        public int getRefno()
-        {
-            return this.refNo;
-        }*/
 
         public String getFullName()
         {

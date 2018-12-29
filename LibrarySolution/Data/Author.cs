@@ -6,36 +6,14 @@ namespace LibrarySolution
 {
     public class Author : User
     {
+        
+        public String description { get; set; }
 
-        private List<String> books;
-        private String description { get; set; }
-        private List<String> genres;
-
-        public Author(String firstName, String lastName, int refNo) : base(firstName, lastName, refNo)
+        public Author(String firstName, String lastName, String description) : base(firstName, lastName)
         {
-            books = new List<String>();
-            genres = new List<string>();
+            this.description = description;
         }
 
-        public void addBook(String book)
-        {
-            this.books.Add(book);
-        }
-
-        public List<String> getBooks()
-        {
-            return books;
-        }
-
-        public void addGenre(String genre)
-        {
-            this.genres.Add(genre);
-        }
-
-        public List<String> getGenres()
-        {
-            return genres;
-        }
 
 
     }

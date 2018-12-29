@@ -32,3 +32,8 @@ C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\obj\Debug\LibraryTests.cs
 C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\obj\Debug\LibraryTests.csproj.CopyComplete
 C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\obj\Debug\LibraryTests.dll
 C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\obj\Debug\LibraryTests.pdb
+C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\bin\Debug\EntityFramework.dll
+C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\bin\Debug\EntityFramework.xml
+C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\bin\Debug\LibraryTests.dll.config
+C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AdrianPiotrowski\Desktop\library\LibraryTests\bin\Debug\EntityFramework.SqlServer.xml

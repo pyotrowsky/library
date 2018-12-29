@@ -5,12 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.Data.Entity;
 
-namespace LibrarySolution.Data
+namespace LibrarySolution
 {
-    [Database(Name="Library")]
-    class LibraryDb : DataContext
+
+   public class LibraryDb : DbContext
     {
-        public LibraryDb(string connection) : base(connection) { }
+        public DbSet<Librarian> Librarians { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Reader> Readers { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+
+       
+
     }
 }
