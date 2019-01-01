@@ -1,0 +1,15 @@
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\bin\Debug\WpfLibrary.exe.config
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\bin\Debug\WpfLibrary.exe
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\bin\Debug\WpfLibrary.pdb
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary.csprojAssemblyReference.cache
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\MainWindow.g.cs
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\App.g.cs
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary_MarkupCompile.cache
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary_MarkupCompile.lref
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\MainWindow.baml
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary.g.resources
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary.Properties.Resources.resources
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary.csproj.GenerateResource.cache
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary.csproj.CoreCompileInputs.cache
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary.exe
+C:\Users\AdrianPiotrowski\Desktop\library\WpfLibrary\obj\Debug\WpfLibrary.pdb

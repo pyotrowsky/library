@@ -56,6 +56,13 @@ namespace LibrarySolution
                     db.Addresses.Add(address);
                 }
             }
+            else if (!db.Rentings.Any() && data is List<Renting>)
+            {
+                foreach (var renting in data.Cast<Renting>().ToList())
+                {
+                    db.Rentings.Add(renting);
+                }
+            }
 
             db.SaveChanges();
         }
@@ -83,6 +90,10 @@ namespace LibrarySolution
             {
                 db.Books.Add((Book)(object)obj);
             }
+            else if (obj is Renting)
+            {
+                db.Rentings.Add((Renting)(object)obj);
+            }
             db.SaveChanges();
         }
 
@@ -107,6 +118,10 @@ namespace LibrarySolution
             else if (obj is Book)
             {
                 db.Books.Remove((Book)(object)obj);
+            }
+            else if (obj is Renting)
+            {
+                db.Rentings.Remove((Renting)(object)obj);
             }
             db.SaveChanges();
         }
@@ -144,6 +159,60 @@ namespace LibrarySolution
                 }
             }
             return librariansFromDb;
+
+
+        }
+
+        public List<Book> readBooks()
+        {
+            var db = new LibraryDb();
+            var booksFromDb = new List<Book>();
+            if (db.Books.Any())
+            {
+                var query = from book in db.Books
+                            select book;
+                foreach (var book in query)
+                {
+                    booksFromDb.Add(book);
+                }
+            }
+            return booksFromDb;
+
+
+        }
+
+        public List<Reader> readReaders()
+        {
+            var db = new LibraryDb();
+            var readersFromDb = new List<Reader>();
+            if (db.Readers.Any())
+            {
+                var query = from reader in db.Readers
+                            select reader;
+                foreach (var reader in query)
+                {
+                    readersFromDb.Add(reader);
+                }
+            }
+            return readersFromDb;
+
+
+        }
+
+        public List<Renting> readRentings()
+        {
+            var db = new LibraryDb();
+            var rentingsFromDb = new List<Renting>();
+            if (db.Readers.Any())
+            {
+                var query = from renting in db.Rentings
+                            select renting;
+                foreach (var renting in query)
+                {
+                    rentingsFromDb.Add(renting);
+                }
+            }
+            return rentingsFromDb;
 
 
         }

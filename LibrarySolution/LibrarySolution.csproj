@@ -54,6 +54,7 @@
     <Compile Include="Data\Address.cs" />
     <Compile Include="Data\Author.cs" />
     <Compile Include="Data\Book.cs" />
+    <Compile Include="Data\Rentings.cs" />
     <Compile Include="Data\Data.cs" />
     <Compile Include="Data\LibraryDb.cs" />
     <Compile Include="Data\Item.cs" />

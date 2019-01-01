@@ -17,8 +17,9 @@ namespace LibrarySolution
         public DbSet<Reader> Readers { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<Renting> Rentings { get; set; }
 
-       
+
 
     }
 }
