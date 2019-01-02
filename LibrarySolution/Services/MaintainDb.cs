@@ -217,5 +217,23 @@ namespace LibrarySolution
 
         }
 
+        public List<Author> readAuthors()
+        {
+            var db = new LibraryDb();
+            var authorsFromDb = new List<Author>();
+            if (db.Authors.Any())
+            {
+                var query = from author in db.Authors
+                            select author;
+                foreach (var author in query)
+                {
+                    authorsFromDb.Add(author);
+                }
+            }
+            return authorsFromDb;
+
+
+        }
+
     }
 }

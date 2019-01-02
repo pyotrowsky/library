@@ -13,13 +13,19 @@ namespace LibrarySolution
         private List<Reader> readers;
         private List<Renting> rentings;
         private List<Book> availableBooks;
+        private List<Author> authors;
 
         public Data()
         {
             librarians = new List<Librarian>();
+            authors = new List<Author>();
+            books = new List<Book>();
+            readers = new List<Reader>();
+            availableBooks = new List<Book>();
+            rentings = new List<Renting>();
         }
 
-       public Boolean addLibrarian(Librarian librarian)
+        public Boolean addLibrarian(Librarian librarian)
         {
             var db = new MaintainDb();
             foreach (var l in librarians)
@@ -53,7 +59,7 @@ namespace LibrarySolution
                     }
                     else librarians.Add(librarian);
                 }
-                
+
             }
             return true;
         }
@@ -72,7 +78,7 @@ namespace LibrarySolution
                     }
                     else books.Add(book);
                 }
-                
+
             }
             return true;
         }
@@ -91,7 +97,7 @@ namespace LibrarySolution
                     }
                     else readers.Add(reader);
                 }
-                
+
             }
             return true;
         }
@@ -136,5 +142,69 @@ namespace LibrarySolution
             return true;
         }
 
+        public Boolean readAuthors()
+        {
+            var db = new MaintainDb();
+            var authorsFromDb = db.readAuthors();
+            foreach (var author in authorsFromDb)
+            {
+                foreach (var authorsStored in authors)
+                {
+                    if (author.firstName == authorsStored.firstName && author.lastName == authorsStored.lastName)
+                    {
+                        ;
+                    }
+                    else authors.Add(author);
+                }
+
+            }
+            return true;
+        }
+
+        public List<Author> getAuthors()
+        {
+            return this.authors;
+        }
+
+        public List<Book> getBooks()
+        {
+            return this.books;
+        }
+
+        public Boolean addBook(Book book)
+        {
+            var db = new MaintainDb();
+            foreach (var b in books)
+            {
+                if (b.id == book.id)
+                {
+                    ;
+                }
+            }
+            books.Add(book);
+            db.insertSingleObject(book);
+            return true;
+        }
+
+        public Boolean addAuthor(Author author)
+        {
+            var db = new MaintainDb();
+            if (authors.Count > 0) {
+                foreach (var a in authors)
+                {
+                    if (a.firstName == author.firstName && a.lastName == author.lastName)
+                    {
+                        return false;
+                    }
+                }
+            }
+            authors.Add(author);
+            db.insertSingleObject(author);
+            return true;
+        }
+
+
     }
-}
+
+    }
+
